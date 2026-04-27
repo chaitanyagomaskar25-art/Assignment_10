@@ -27,6 +27,7 @@ const App = () => {
   useEffect(()=>{
     if (!debouncing) return;
     fetchData();
+    document.title = debouncing
 
   },[debouncing])
   return (
